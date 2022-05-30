@@ -6,7 +6,7 @@
 
 
 ## Whiteboard Process: 
-![whiteBoard](./assest/Capture2.png)
+![whiteBoard](./assest/Capture2.PNG)
 
 
 
