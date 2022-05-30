@@ -2,7 +2,7 @@
 
 * we made a function called reverseString which takes an String  and converte it into array .
 
-![reversString](./assest/Capture3.png)
+![reversString](./assest/Capture3.PNG)
 
 
 ## Whiteboard Process: 
