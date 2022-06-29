@@ -1,5 +1,15 @@
 const Queue = require('./queue/queue');
 
+const AnimalShelter=require ("./AnimalShelter");
+
+let animalShilter=new AnimalShelter();
+animalShilter.enqueue("cat");
+animalShilter.enqueue("cat");
+animalShilter.enqueue("cat");
+animalShilter.enqueue("dog");
+animalShilter.dequeue("cat");
+animalShilter.dequeue("dog");
+
 const newQueue = new Queue();
 
 newQueue.enqueue(1);
