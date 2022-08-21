@@ -1,4 +1,5 @@
 const HashTable = require('../hashTable');
+const firstRepeatingWord = require('../hash-repeated');
 
 const hashTable = new HashTable(10);
 
@@ -35,5 +36,13 @@ describe('Hash Table Test', () => {
   it('Successfully hash a key to an in-range value', () => {
     hashTable.set('hello', 'world');
     expect(hashTable.hash('hello')).toBeLessThan(10);
+  });
+  it('Successfully return the first repeated word from a string', () => {
+    let s = "Once upon a time, there was a brave princess who...";
+    expect(firstRepeatingWord(s)).toEqual('a');
+    let s1 = 'It was the best of times, it was the worst of times'
+    expect(firstRepeatingWord(s1)).toEqual('it');
+    let s2 = "It was a queer, sultry summer , the summer they electrocuted the Rosenbergs, and I didn’t know what I was doing in New York..."
+    expect(firstRepeatingWord(s2)).toEqual('summer');
   });
 })
